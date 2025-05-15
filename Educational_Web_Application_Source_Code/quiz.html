@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming & Web Technologies Quiz</title>
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="start-screen" class="screen">
+      <h1>Programming & Web Technologies Quiz</h1>
+      <p>Test your knowledge of Programming & Web Technologies</p>
+      <div class="category-container">
+        <button class="category-btn" data-category="html">HTML</button>
+        <button class="category-btn" data-category="css">CSS</button>
+        <button class="category-btn" data-category="javascript">JavaScript</button>
+        <button class="category-btn" data-category="bootstrap">Bootstrap</button>
+        <button class="category-btn" data-category="php">PHP</button>
+        <button class="category-btn" data-category="mysql">MySQL</button>
+        <button class="category-btn" data-category="sass">SASS</button>
+        <button class="category-btn" data-category="jquery">jQuery</button>
+      </div>
+    </div>
+
+    <div id="quiz-screen" class="screen hidden">
+      <div class="quiz-header">
+        <h2 id="category-title">Quiz</h2>
+        <div class="quiz-info">
+          <span id="question-counter">Question 1/10</span>
+          <span id="timer">30s</span>
+        </div>
+      </div>
+      
+      <div class="progress-bar">
+        <div id="progress"></div>
+      </div>
+      
+      <div id="question-container">
+        <h3 id="question-text">Question text will appear here</h3>
+        <div id="options-container">
+          <!-- Options will be inserted by JavaScript -->
+        </div>
+      </div>
+      
+      <div id="explanation-container" class="hidden">
+        <p id="result-indicator"></p>
+        <p id="explanation-text"></p>
+        <button id="next-btn">Next Question</button>
+      </div>
+    </div>
+
+    <div id="results-screen" class="screen hidden">
+      <h2>Quiz Results</h2>
+      <div class="result-summary">
+        <div class="score-display">
+          <span id="score">0</span>/<span id="total-questions">10</span>
+        </div>
+        <p id="score-percentage">0%</p>
+        <p id="feedback-message">Keep practicing!</p>
+      </div>
+      
+      <div class="result-stats">
+        <div class="stat-item">
+          <span class="stat-label">Correct</span>
+          <div class="stat-bar-container">
+            <div id="correct-bar" class="stat-bar correct"></div>
+          </div>
+          <span id="correct-count">0</span>
+        </div>
+        
+        <div class="stat-item">
+          <span class="stat-label">Incorrect</span>
+          <div class="stat-bar-container">
+            <div id="incorrect-bar" class="stat-bar incorrect"></div>
+          </div>
+          <span id="incorrect-count">0</span>
+        </div>
+        
+        <div class="stat-item">
+          <span class="stat-label">Unanswered</span>
+          <div class="stat-bar-container">
+            <div id="unanswered-bar" class="stat-bar unanswered"></div>
+          </div>
+          <span id="unanswered-count">0</span>
+        </div>
+      </div>
+      
+      <div class="result-actions">
+        <button id="try-again-btn">Try Again</button>
+        <button id="new-quiz-btn">New Quiz</button>
+      </div>
+    </div>
+  </div>
+
+   <script>
+  window.onload = function() {
+  alert("📢 Currently, only the HTML quiz is available.\nQuizzes for other topics are under development and will be added soon.");
+  };
+  </script>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
