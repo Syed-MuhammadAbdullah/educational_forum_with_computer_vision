@@ -1,8 +1,6 @@
 My project contains two main folders:
 1.	ComputerVision-GestureControl_Source_Code
 2.	Educational_Web_Application_Source_Code
-
-1. Folder 1 ( ComputerVision-GestureControl_Source_Code )
    
 Technologies Used:
 
